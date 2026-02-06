@@ -633,13 +633,13 @@
             }, 900);
         });
 
-        // 2. NO BUTTON - SHOWS TEASING MESSAGE (NO MOVEMENT)
+        // 2. NO BUTTON - SHOWS TEASING MESSAGE ONLY ON CLICK (NO MOVEMENT)
         function showTeaseOnNo() {
             // Show teasing message only
             showTeaseMessage();
         }
 
-        noBtn.addEventListener('mouseenter', showTeaseOnNo);
+        // Only show message when NO button is actually clicked
         noBtn.addEventListener('click', (e) => {
             e.preventDefault();
             showTeaseOnNo();
